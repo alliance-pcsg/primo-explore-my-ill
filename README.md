@@ -1,12 +1,8 @@
 # primo-explore-my-ill
 Load illiad requests &amp; articles into Primo "My Account"
 
-
-# primo-explore-oadoi-link
-Provides link to Open Access content for articles, when available
-
 ## Features
-In a full display record, checks for the presence of a DOI. Queries the [OADOI API (v2)](https://oadoi.org/api/v2), and upon the presence of an open access link, displays a bar with the link under the "View It" section.
+Creates a pane in Primo New UI "My Account". Queries ILLiad for user's current requests and received articles, and displays them in the pane, including direct links to articles.
 
 ### Screenshot
 ![screenshot](screenshot.png)
@@ -23,14 +19,19 @@ In a full display record, checks for the presence of a DOI. Queries the [OADOI A
     ```
 4. Install this package:
     ```
-    npm install primo-explore-oadoi-link --save-dev
+    npm install primo-explore-my-ill --save-dev
     ```
+5. Generate an ILLiad Web Platform API Key, as described [here](https://prometheus.atlas-sys.com/display/illiad/The+ILLiad+Web+Platform+API).
+
+6. Deploy the php file to a server accessible to you. Edit lines 7, 10, and 11.
+
+7. Place the .htaccess file in the same directory as your PHP file to add CORS authorization.
 
 ## Usage
-Once this package is installed, add `oadoi` as a dependency for your custom module definition.
+Once this package is installed, add `my-ill` as a dependency for your custom module definition.
 
 ```js
-var app = angular.module('viewCustom', ['oadoi'])
+var app = angular.module('viewCustom', ['my-ill'])
 ```
 
 Note: If you're using the `--browserify` build option, you will need to first import the module with:
