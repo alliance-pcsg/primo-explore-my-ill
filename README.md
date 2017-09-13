@@ -44,15 +44,23 @@ You can configure the banner by passing a configuration object. All properties a
 
 | name      | type         | usage                                                                                   |
 |-----------|--------------|-----------------------------------------------------------------------------------------|
-| `imagePath` | string       | icon for next to the image link                                               |
-| `email` | string       | email address attached to api query                                               |
+| `groups` | array       | array of alma user group codes in which this should appear                                               |
+| `remoteScript` | string       | url of server-side php script                                               |
+| `boxTitle` | string       | Text to appear at the top of the ILL box                                               |
+| `illiadURL` | string       | url of your ILLiad login page                                               |
+| `apiURL` | string       | url of ILLiad Web Platform endpoint for Transactions/UserRequests (documentation [here](https://prometheus.atlas-sys.com/display/illiad/The+ILLiad+Web+Platform+API))                                               |
 
 The code below adds a banner similar to the above image.
 
 ```js
-app.constant('oadoiOptions', {
-  "imagePath": "custom/LCC/img/oa_50.png",
-  "email": "youremail@domain.com"
+app.constant('illiadOptions', {
+  "groups": [0,1,2,3],
+  "remoteScript": "https://mydomain.com/illiad.php",
+  "boxTitle": "My Library Interlibrary Loan",
+  "illiadURL": "https://illiad.myinstitution.edu/illiad/Logon.html",
+  "apiURL": "https://illiad.myinstitution.edu/ILLiadWebPlatform/Transaction/UserRequests/",
+
+
 })
 ```
 
