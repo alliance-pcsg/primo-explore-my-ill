@@ -31,7 +31,7 @@ Creates a pane in Primo New UI "My Account". Queries ILLiad for user's current r
 Once this package is installed, add `my-ill` as a dependency for your custom module definition.
 
 ```js
-var app = angular.module('viewCustom', ['my-ill'])
+var app = angular.module('viewCustom', ['myILL'])
 ```
 
 Note: If you're using the `--browserify` build option, you will need to first import the module with:
