@@ -25,7 +25,7 @@ Creates a pane in Primo New UI "My Account". Queries ILLiad for user's current r
 
 6. Deploy the php file to a server accessible to you. Edit lines 7, 10, and 11.
 
-7. Place the .htaccess file in the same directory as your PHP file to add CORS authorization.
+7. Place the .htaccess file in the same directory as your PHP file to add CORS authorization. Note: if CORS is still an issue, please visit [this page](https://awesometoast.com/cors/) for further solutions to get this working.
 
 ## Usage
 Once this package is installed, add `my-ill` as a dependency for your custom module definition.
