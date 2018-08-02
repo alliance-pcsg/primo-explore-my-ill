@@ -1,5 +1,5 @@
 {
-  "name": "primo-explore-my-ill",
+  "name": "@orbis-cascade/primo-explore-my-ill",
   "version": "1.0.0",
   "description": "Creates a pane in Primo New UI \"My Account\". Queries ILLiad for user's current requests and received articles, and displays them in the pane, including direct links to articles.",
   "main": "index.js",
