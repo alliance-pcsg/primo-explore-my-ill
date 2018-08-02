@@ -1,0 +1,24 @@
+{
+  "name": "primo-explore-my-ill",
+  "version": "1.0.0",
+  "description": "Creates a pane in Primo New UI \"My Account\". Queries ILLiad for user's current requests and received articles, and displays them in the pane, including direct links to articles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alliance-PCJWG/primo-explore-my-ill.git"
+  },
+  "keywords": [
+    "Primo",
+    "Explore",
+    "ILLiad"
+  ],
+  "author": "Jeremy McWilliams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alliance-PCJWG/primo-explore-my-ill/issues"
+  },
+  "homepage": "https://github.com/Alliance-PCJWG/primo-explore-my-ill#readme"
+}

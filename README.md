@@ -37,7 +37,7 @@ var app = angular.module('viewCustom', ['my-ill'])
 Note: If you're using the `--browserify` build option, you will need to first import the module with:
 
 ```javascript
-import 'primo-explore-oadoi-link';
+import 'primo-explore-my-ill';
 ```
 
 You can configure the banner by passing a configuration object. All properties are required.
